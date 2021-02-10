@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeCommencement">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dui odio, lacinia eget efficitur quis, aliquam porttitor metus. Vestibulum ullamcorper tincidunt lectus finibus sollicitudin. Donec vel pretium sapien. Phasellus et tellus magna. Integer eu mauris quis ex aliquet blandit. Mauris nulla risus, finibus interdum tincidunt vitae, suscipit nec enim. Praesent vestibulum sapien risus, ac tincidunt lorem condimentum in. Integer mi felis, consequat et metus ut, congue consequat urna. Etiam eget sem nec erat congue scelerisque eu vitae mi. Vivamus tristique, elit sed feugiat feugiat, elit justo dapibus arcu, at molestie nunc mauris vel ligula. Ut commodo facilisis pretium. Duis aliquam urna et tortor mattis cursus.\n \n Morbi eu consequat metus, quis fermentum nisi. Morbi iaculis libero massa, nec vulputate enim rhoncus a. Sed tortor lacus, dapibus eu eros ut, maximus fringilla justo. Donec tempor, urna vitae tincidunt vestibulum, ante sem hendrerit dolor, eget tristique urna orci in ipsum. Fusce rutrum dictum odio ut gravida. Suspendisse eleifend sapien quis condimentum viverra. Cras quis magna eget nunc elementum ullamcorper in in quam. Praesent gravida molestie libero, at porta nisl consectetur quis."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <Button
+        android:id="@+id/NewAdventure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commencer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+</androidx.constraintlayout.widget.ConstraintLayout>

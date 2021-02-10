@@ -7,21 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MenuPrincipale extends AppCompatActivity {
+public class LeCommencement extends AppCompatActivity {
 
-    private Button NewGame;
+    private Button Next;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.NewGame = findViewById(R.id.NewGame);
+        this.Next = findViewById(R.id.NewAdventure);
 
-        NewGame.setOnClickListener(new View.OnClickListener() {
+         Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent launchNG = new Intent(getApplicationContext(), Debutfullscreen.class);
-                startActivity(launchNG);
+                Intent LaunchNext = new Intent(getApplicationContext(), Debutfullscreen.class);
+                startActivity(LaunchNext);
                 finish();
             }
         });
