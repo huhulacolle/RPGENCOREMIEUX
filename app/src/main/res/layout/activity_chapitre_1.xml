@@ -61,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:text="Le Commencement"
+        android:text="Chapitre 1 "
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
