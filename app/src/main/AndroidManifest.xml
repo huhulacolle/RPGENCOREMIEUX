@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RPGENCOREMIEUX">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".Debut"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_debut"
+            android:theme="@style/Theme.RPGENCOREMIEUX.Fullscreen"></activity>
+        <activity android:name=".MenuPrincipale">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
