@@ -20,7 +20,7 @@ public class MenuPrincipale extends AppCompatActivity {
         NewGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent launchNG = new Intent(getApplicationContext(), Debutfullscreen.class);
+                Intent launchNG = new Intent(getApplicationContext(), LeCommencement.class);
                 startActivity(launchNG);
                 finish();
             }

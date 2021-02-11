@@ -10,11 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RPGENCOREMIEUX">
         <activity android:name=".LeCommencement"></activity>
-        <activity
-            android:name=".Debutfullscreen"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_debut"
-            android:theme="@style/Theme.RPGENCOREMIEUX.Fullscreen" />
         <activity android:name=".MenuPrincipale">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
