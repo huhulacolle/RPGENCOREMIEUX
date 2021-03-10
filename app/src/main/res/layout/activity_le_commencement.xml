@@ -22,21 +22,21 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="381dp"
-        android:layout_height="543dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet ultricies odio. Cras dictum porttitor rhoncus. Integer pretium tempus fringilla. Praesent vitae ex vel urna placerat aliquam vel nec lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus non diam odio. Etiam in urna hendrerit diam posuere blandit. Aenean varius felis sit amet pharetra maximus. Maecenas in leo orci. Donec porttitor volutpat mattis. Nulla eleifend quam vitae elit pulvinar, at maximus est consectetur. Mauris eget nisi iaculis ligula dignissim facilisis vitae sed lectus. Sed nec lacinia orci. Proin eu gravida arcu. \n \n Integer at leo rhoncus, cursus orci a, dictum tellus. Donec vitae orci non nisi pretium pretium quis eget est. In a consequat nibh, eget ultrices odio. Maecenas et sodales nisi, et bibendum lectus. Mauris orci nunc, gravida vel tellus venenatis, volutpat consectetur diam. Donec in sollicitudin massa. Nulla condimentum accumsan diam, a malesuada elit pharetra id. Nulla at vestibulum sem, at ultrices leo. Nunc nec ante ut augue ullamcorper pharetra. Maecenas leo dolor, semper sed magna id, luctus interdum odio."
+        android:layout_width="383dp"
+        android:layout_height="480dp"
+        android:text="Il était une fois un héros nommé Gerolt de Rav. Ce chasseur sans pareil voyageais tout autour de la tirre pour aider les habitants à se débarasser de monstres ou les criminels qui les terrorisent. \n\nPour sa prochaine aventure il a besoin de votre aide pour le guider à travers des terres hostiles que vous connaissé comme votre poche car vous y avez vécu toute votre vie.\nIl vous offre une récompense si vous vous en sortez vivant. \nVous acceptez sans hésité car vous n'avez même pas assez d'or sur vous pour acheter une bière.\n\nVous quittez le village Caucau-riz-ko avec Gerolt équipé seulement d'une carte que vous avez déssiné car vous êtes le meilleur scribe du village."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.545" />
 
     <Button
         android:id="@+id/next"
         android:layout_width="233dp"
         android:layout_height="70dp"
         android:layout_marginBottom="24dp"
-        android:text="Avancer vers la prochaine zone"
+        android:text="Voir la carte"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
