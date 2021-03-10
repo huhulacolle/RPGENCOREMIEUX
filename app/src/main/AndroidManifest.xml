@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Chapitre_2" />
+        <activity android:name=".CarteUltime" />
         <activity android:name=".LeCommencement" />
         <activity android:name=".MenuPrincipale">
             <intent-filter>
