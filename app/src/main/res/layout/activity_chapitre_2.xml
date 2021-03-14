@@ -46,7 +46,6 @@
         android:id="@+id/imageView"
         android:layout_width="587dp"
         android:layout_height="1014dp"
-        app:srcCompat="@drawable/CarteMagnifique"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-29dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

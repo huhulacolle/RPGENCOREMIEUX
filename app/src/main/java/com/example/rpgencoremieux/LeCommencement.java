@@ -15,7 +15,7 @@ public class LeCommencement extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_le_commencement);
         this.Carte = findViewById(R.id.next);
-
+        getSupportActionBar().hide();
         Carte.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
