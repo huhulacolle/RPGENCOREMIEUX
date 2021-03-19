@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CarteUltime"
-    android:background="@drawable/ic_cartemagnifique">
+    tools:context=".CarteUltime">
 
     <Button
         android:id="@+id/next2"
