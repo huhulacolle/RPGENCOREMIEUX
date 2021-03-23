@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class LeCommencement extends AppCompatActivity {
+
+    private Bd db = new Bd(LeCommencement.this);
 
     private Button Carte;
     @Override
