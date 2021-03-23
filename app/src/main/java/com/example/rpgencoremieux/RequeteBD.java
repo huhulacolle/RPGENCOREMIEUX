@@ -2,6 +2,7 @@ package com.example.rpgencoremieux;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -40,5 +41,18 @@ public class RequeteBD extends SQLiteOpenHelper {
         ContentValues cv = new ContentValues();
         cv.put("level", 1);
         db.insert("Sauvegarde", null, cv);
+    }
+
+    Cursor LireFichier()
+    {
+        String query = "SELECT joueur FROM Sauvegarde";
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if (db != null)
+        {
+            cursor = db.rawQuery(query, null);
+        }
+        return cursor;
     }
 }
