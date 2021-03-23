@@ -4,13 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class LeCommencement extends AppCompatActivity {
 
-    private Bd db = new Bd(LeCommencement.this);
+    private RequeteBD db = new RequeteBD(LeCommencement.this);
 
     private Button Carte;
     @Override
@@ -19,6 +18,7 @@ public class LeCommencement extends AppCompatActivity {
         setContentView(R.layout.activity_le_commencement);
         this.Carte = findViewById(R.id.next);
         getSupportActionBar().hide();
+        db.CreationSauvegarde();
         Carte.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

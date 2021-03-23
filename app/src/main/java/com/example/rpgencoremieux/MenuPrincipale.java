@@ -10,13 +10,12 @@ import android.widget.Button;
 public class MenuPrincipale extends AppCompatActivity {
 
     private Button NewGame;
-    private Bd db = new Bd(MenuPrincipale.this);
+    private RequeteBD db = new RequeteBD(MenuPrincipale.this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        db.CreationSauvegarde();
         this.NewGame = findViewById(R.id.NewGame);
 
         NewGame.setOnClickListener(new View.OnClickListener() {

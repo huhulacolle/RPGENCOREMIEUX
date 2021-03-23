@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class SplashScreen extends AppCompatActivity {
 
-    private Bd db = new Bd(SplashScreen.this);
+    private RequeteBD db = new RequeteBD(SplashScreen.this);
 
     private Button Start;
 

@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-public class Bd extends SQLiteOpenHelper {
+public class RequeteBD extends SQLiteOpenHelper {
     private Context context;
     private static final String DATABASE_NAME = "dbDuRPGtropbien";
 
@@ -16,7 +16,7 @@ public class Bd extends SQLiteOpenHelper {
     private static final String COLUMN_ID = "joueur";
     private static final String Level = "Level";
 
-    public Bd(@Nullable Context context) {
+    public RequeteBD(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         this.context = context;
     }
@@ -24,7 +24,7 @@ public class Bd extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String query =
-                "CREATE TABLE " + TABLE_NAME + " (" + COLUMN_ID + " INTEGER PRIMARY KEY, " + Level + " INTEGER" + ");";
+                "CREATE TABLE " + TABLE_NAME + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + Level + " INTEGER" + ");";
         db.execSQL(query);
     }
 
@@ -38,7 +38,6 @@ public class Bd extends SQLiteOpenHelper {
     {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
-        cv.put("joueur", 1);
         cv.put("level", 1);
         db.insert("Sauvegarde", null, cv);
     }
