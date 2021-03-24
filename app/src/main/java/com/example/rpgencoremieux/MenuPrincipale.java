@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MenuPrincipale extends AppCompatActivity {
 
@@ -60,10 +61,24 @@ public class MenuPrincipale extends AppCompatActivity {
                     });
                     break;
                 default:
-
+                    Continue.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Toast.makeText(getApplicationContext(), "Votre sauvegarde est corrompu", Toast.LENGTH_SHORT).show();
+                        }
+                    });
                     break;
             }
 
+        }
+        else
+        {
+            Continue.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getApplicationContext(), "Vous avez aucune sauvegarde", Toast.LENGTH_SHORT).show();
+                }
+            });
         }
     }
 }
