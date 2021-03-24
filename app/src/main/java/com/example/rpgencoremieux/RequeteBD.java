@@ -45,7 +45,7 @@ public class RequeteBD extends SQLiteOpenHelper {
 
     Cursor LireFichier()
     {
-        String query = "SELECT joueur FROM Sauvegarde";
+        String query = "SELECT Level FROM Sauvegarde";
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = null;
