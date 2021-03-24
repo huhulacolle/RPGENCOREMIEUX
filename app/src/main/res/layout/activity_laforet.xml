@@ -4,55 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CarteUltime">
+    tools:context=".Laforet">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="383dp"
+        android:layout_height="480dp"
+        android:text="Vous vous retrouvez dans une forêt très dense. \nUne fois à l'intérieur vous ne voyez que les arbres, seul quelques rayons de lumière réussissent à passer au travers des branches et tout le feuillage. \nVous trouvez ce qui ressemble à un petit chemin et vous décidez de le suivre jusqu'au moment il a l'air de se divisez en deux. \nEn tant que guide le choix vois revient.\nIrez vous à gauche? \nOu peut être à droite?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.545" />
 
     <Button
-        android:id="@+id/next2"
+        android:id="@+id/next4"
         android:layout_width="200dp"
         android:layout_height="70dp"
-        android:text="Aller dans les marécages"
+        android:text="Aller à droite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/next3"
+        android:id="@+id/next5"
         android:layout_width="200dp"
         android:layout_height="70dp"
-        android:text="Aller dans la forêt"
+        android:text="Aller à gauche"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="La carte ULTIME"
+        android:text="Chapitre 2 : La forêt"
         android:textAlignment="center"
-        android:textColor="@color/black"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:translationZ="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04000002" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toTopOf="@+id/next3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/cartemagnifique" />
-
+        app:layout_constraintVertical_bias="0.054" />
 </androidx.constraintlayout.widget.ConstraintLayout>
