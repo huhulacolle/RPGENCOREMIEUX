@@ -44,8 +44,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="587dp"
-        android:layout_height="1014dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-29dp" />
+        android:layout_width="459dp"
+        android:layout_height="539dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
