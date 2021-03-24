@@ -35,16 +35,36 @@ public class MenuPrincipale extends AppCompatActivity {
             }
         });
         Cursor sauvegardes = db.LireFichier();
-        Log.d("STATE", String.valueOf(sauvegardes));
-        if((sauvegardes != null) && sauvegardes.moveToFirst()) {
-            Continue.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent launchNG = new Intent(getApplicationContext(), SplashScreen.class);
-                    startActivity(launchNG);
-                    finish();
-                }
-            });
+        if((sauvegardes != null && sauvegardes.moveToFirst())) {
+            int niveau = sauvegardes.getInt(sauvegardes.getColumnIndex("Level"));
+//            niveau = [inserer num] pour le debug
+            Log.d("Sauvegarde ", String.valueOf(niveau));
+            switch (niveau){
+                case 1:
+                    Continue.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent launchNG = new Intent(getApplicationContext(), LeCommencement.class);
+                            startActivity(launchNG);
+                            finish();
+                        }
+                    });
+                    break;
+                case 2:
+                    Continue.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent launchNG = new Intent(getApplicationContext(), CarteUltime.class);
+                            startActivity(launchNG);
+                            finish();
+                        }
+                    });
+                    break;
+                default:
+
+                    break;
+            }
+
         }
     }
 }
