@@ -28,7 +28,6 @@ public class MenuPrincipale extends AppCompatActivity {
         NewGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                db.CreationSauvegarde();
                 Intent launchNG = new Intent(getApplicationContext(), LeCommencement.class);
                 startActivity(launchNG);
                 finish();

@@ -43,6 +43,14 @@ public class RequeteBD extends SQLiteOpenHelper {
         db.insert("Sauvegarde", null, cv);
     }
 
+    public void NouvelleSauvegarde()
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("level", 1);
+        db.update(TABLE_NAME, cv, "joueur = " + 1, new String[]{});
+    }
+
     public void Carte()
     {
         SQLiteDatabase db = this.getWritableDatabase();
