@@ -60,6 +60,26 @@ public class MenuPrincipale extends AppCompatActivity {
                         }
                     });
                     break;
+                case 3:
+                    Continue.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent launchNG = new Intent(getApplicationContext(), Laforet.class);
+                            startActivity(launchNG);
+                            finish();
+                        }
+                    });
+                    break;
+                case 4:
+                    Continue.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent launchNG = new Intent(getApplicationContext(), Laforet2.class);
+                            startActivity(launchNG);
+                            finish();
+                        }
+                    });
+                    break;
                 default:
                     Continue.setOnClickListener(new View.OnClickListener() {
                         @Override

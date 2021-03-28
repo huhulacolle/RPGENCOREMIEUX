@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Laforet extends AppCompatActivity {
-
+    private RequeteBD db = new RequeteBD(Laforet.this);
     private Button Droite;
     private Button Gauche;
 
@@ -18,6 +18,7 @@ public class Laforet extends AppCompatActivity {
         setContentView(R.layout.activity_laforet);
         this.Gauche = findViewById(R.id.next5);
         getSupportActionBar().hide();
+        db.Foret();
         Gauche.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

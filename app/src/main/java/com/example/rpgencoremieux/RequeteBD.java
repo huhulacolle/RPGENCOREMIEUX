@@ -59,6 +59,22 @@ public class RequeteBD extends SQLiteOpenHelper {
         db.update(TABLE_NAME, cv, "joueur = " + 1, new String[]{});
     }
 
+    public void Foret()
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("level", 3);
+        db.update(TABLE_NAME, cv, "joueur = " + 1, new String[]{});
+    }
+
+    public void Foret2()
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("level", 4);
+        db.update(TABLE_NAME, cv, "joueur = " + 1, new String[]{});
+    }
+
 
     Cursor LireFichier()
     {
